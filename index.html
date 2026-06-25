@@ -15,9 +15,10 @@
       <a href="#services">Services</a>
       <a href="#booking">Booking</a>
       <a href="#calendar">Calendar</a>
-      <a href="#gallery">Gallery</a>
+      <a href="#payment">Payment</a>
       <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
+      <a class="login-btn" href="#login">Login</a>
     </div>
   </nav>
 
@@ -25,17 +26,17 @@
     <p class="tagline">Tokyo local guide • Airport support • Travel help</p>
     <h2>Travel Japan with a friendly local buddy.</h2>
     <p>
-      I help visitors with airport pickup assistance, Tokyo tours, train support,
-      food spots, shopping, and simple translation.
+      Airport pickup, Tokyo tours, train support, food spots, shopping help,
+      simple translation, and travel guidance for visitors in Japan.
     </p>
-    <a class="btn" href="#booking">Book Your Date</a>
+    <a class="btn" href="#booking">Book Your Service</a>
   </div>
 </header>
 
 <main>
 
 <section id="services" class="section">
-  <h2>Services</h2>
+  <h2>Professional Services</h2>
   <p class="center-text">Choose the service that fits your trip.</p>
 
   <div class="cards">
@@ -59,52 +60,54 @@
 
     <div class="card">
       <h3>🍜 Food & Shopping Guide</h3>
-      <p>Find local restaurants, budget food, souvenir shops, anime stores, Don Quijote, and shopping areas.</p>
+      <p>Find local restaurants, souvenir shops, anime stores, Don Quijote, and shopping areas.</p>
       <strong>From ¥3,000</strong>
     </div>
   </div>
 </section>
 
 <section id="booking" class="section light">
-  <h2>Book Your Service</h2>
-  <p class="center-text">Select your date and send your request. I will reply by WhatsApp, LINE, or email.</p>
+  <h2>Booking Form</h2>
+  <p class="center-text">
+    Fill out the form below. After connecting Formspree, Basin, or Netlify Forms, booking requests will go directly to your email.
+  </p>
 
-  <form class="booking-form" action="mailto:dilipsunwar2078@gmail.com" method="post" enctype="text/plain">
+  <form class="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
     <div class="form-row">
       <div>
         <label>Full Name</label>
-        <input type="text" name="Full Name" placeholder="Your name" required>
+        <input type="text" name="full_name" placeholder="Your name" required>
       </div>
       <div>
         <label>Country</label>
-        <input type="text" name="Country" placeholder="Your country">
+        <input type="text" name="country" placeholder="Your country">
       </div>
     </div>
 
     <div class="form-row">
       <div>
         <label>Email</label>
-        <input type="email" name="Email" placeholder="your@email.com" required>
+        <input type="email" name="email" placeholder="your@email.com" required>
       </div>
       <div>
         <label>WhatsApp / LINE</label>
-        <input type="text" name="WhatsApp or LINE" placeholder="090-3845-3757">
+        <input type="text" name="contact" placeholder="090-3845-3757">
       </div>
     </div>
 
     <div class="form-row">
       <div>
         <label>Booking Date</label>
-        <input type="date" name="Booking Date" required>
+        <input type="date" name="booking_date" required>
       </div>
       <div>
         <label>Preferred Time</label>
-        <input type="time" name="Preferred Time">
+        <input type="time" name="preferred_time">
       </div>
     </div>
 
     <label>Service Type</label>
-    <select name="Service Type" required>
+    <select name="service_type" required>
       <option>Airport Pickup Assistance</option>
       <option>Airport Drop-off Assistance</option>
       <option>Tokyo Local Tour</option>
@@ -115,7 +118,7 @@
     </select>
 
     <label>Number of People</label>
-    <select name="Number of People">
+    <select name="number_of_people">
       <option>1 person</option>
       <option>2 people</option>
       <option>3 people</option>
@@ -123,20 +126,27 @@
     </select>
 
     <label>Message</label>
-    <textarea name="Message" rows="5" placeholder="Tell me your airport, hotel area, places you want to visit, or questions."></textarea>
+    <textarea name="message" rows="5" placeholder="Tell me your airport, hotel area, places you want to visit, or questions."></textarea>
 
     <button type="submit" class="btn">Send Booking Request</button>
   </form>
+
+  <div class="note-box">
+    <h3>Form connection options</h3>
+    <p><strong>Formspree:</strong> Replace YOUR_FORM_ID with your real Formspree form ID.</p>
+    <p><strong>Basin:</strong> Replace the form action link with your Basin endpoint.</p>
+    <p><strong>Netlify Forms:</strong> Use this later if you move the site back to Netlify.</p>
+  </div>
 </section>
 
 <section id="calendar" class="section">
   <h2>Availability Calendar</h2>
-  <p class="center-text">This is a simple example calendar. Please contact me to confirm the final schedule.</p>
+  <p class="center-text">Visitors can check available dates. For now, this is a simple calendar design. Later, connect Google Calendar or Calendly.</p>
 
   <div class="calendar-box">
     <div class="calendar-header">
       <h3>June</h3>
-      <p>Available / Booked</p>
+      <p>Available dates and booked dates</p>
     </div>
 
     <div class="week-row">
@@ -148,6 +158,42 @@
       <div class="day available"><span>Sat</span><strong>Available</strong></div>
       <div class="day available"><span>Sun</span><strong>Available</strong></div>
     </div>
+  </div>
+</section>
+
+<section id="payment" class="section light">
+  <h2>Online Payment</h2>
+  <p class="center-text">
+    Customers can pay online after you confirm their booking. Connect PayPal, Stripe, or Square later.
+  </p>
+
+  <div class="payment-grid">
+    <div class="payment-card">
+      <h3>PayPal Payment</h3>
+      <p>Add your PayPal payment link here.</p>
+      <a class="btn" href="#" target="_blank">Pay with PayPal</a>
+    </div>
+
+    <div class="payment-card">
+      <h3>Stripe / Card Payment</h3>
+      <p>Add your Stripe checkout link here.</p>
+      <a class="btn secondary" href="#" target="_blank">Pay by Card</a>
+    </div>
+  </div>
+</section>
+
+<section id="login" class="section">
+  <h2>Customer Login</h2>
+  <p class="center-text">
+    Login system is prepared as a section. A real login needs an external service such as Firebase, Memberstack, or a custom backend.
+  </p>
+
+  <div class="login-box">
+    <label>Email</label>
+    <input type="email" placeholder="customer@email.com">
+    <label>Password</label>
+    <input type="password" placeholder="Password">
+    <button class="btn" type="button">Login Coming Soon</button>
   </div>
 </section>
 
@@ -163,40 +209,53 @@
   </div>
 </section>
 
-<section id="reviews" class="section">
+<section id="map" class="section">
+  <h2>Service Area</h2>
+  <p class="center-text">Tokyo, Haneda Airport, Narita Airport, and nearby areas.</p>
+
+  <div class="map-box">
+    <iframe
+      src="https://www.google.com/maps?q=Tokyo%20Japan&output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+<section id="reviews" class="section light">
   <h2>Customer Reviews</h2>
-  <p class="center-text">Real customer reviews will be added here after bookings.</p>
+  <p class="center-text">Real customer reviews will be added after confirmed bookings.</p>
 
   <div class="review-grid">
     <div class="review-card">
       <p class="stars">★★★★★</p>
-      <p>"Friendly support for first-time visitors in Tokyo."</p>
-      <strong>— Future Guest</strong>
+      <p>Reviews from verified customers will appear here soon.</p>
+      <strong>— Japan Local Buddy</strong>
     </div>
 
     <div class="review-card">
       <p class="stars">★★★★★</p>
-      <p>"Helpful with airport, trains, food places, and local tips."</p>
-      <strong>— Future Guest</strong>
+      <p>After your first guest, add their real feedback here with permission.</p>
+      <strong>— Verified Guest</strong>
     </div>
 
     <div class="review-card">
       <p class="stars">★★★★★</p>
-      <p>"A comfortable way to experience Japan like a local."</p>
-      <strong>— Future Guest</strong>
+      <p>Collect reviews through Google Business Profile, Instagram, and direct booking.</p>
+      <strong>— Future Review</strong>
     </div>
   </div>
 </section>
 
-<section id="contact" class="section contact light">
+<section id="contact" class="section contact">
   <h2>Contact</h2>
   <p>For booking or questions, message me directly.</p>
 
   <div class="contact-box">
     <p><strong>WhatsApp / LINE:</strong> 090-3845-3757</p>
     <p><strong>Email:</strong> dilipsunwar2078@gmail.com</p>
-    <p><strong>Instagram:</strong> @japanlocalbuddy</p>
-    <p><strong>TikTok:</strong> @japanlocalbuddy</p>
+    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/japanlocalbuddy" target="_blank">@japanlocalbuddy</a></p>
+    <p><strong>TikTok:</strong> <a href="https://www.tiktok.com/@japanlocalbuddy" target="_blank">@japanlocalbuddy</a></p>
     <p><strong>Service Area:</strong> Tokyo, Haneda Airport, Narita Airport</p>
   </div>
 
@@ -208,7 +267,7 @@
 <a class="whatsapp" href="https://wa.me/819038453757" target="_blank">WhatsApp</a>
 
 <footer>
-  <p>© 2026 Japan Local Buddy. Friendly local support for visitors in Japan.</p>
+  <p>© 2026 Japan Local Buddy. Tokyo travel support for international visitors.</p>
 </footer>
 
 <script src="script.js"></script>

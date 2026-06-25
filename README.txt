@@ -1,15 +1,26 @@
-Japan Local Buddy V3
+Japan Local Buddy V4
 
-Updates:
-- Removed FAQ
-- Professional services section
-- Booking form with date and time picker
+Included:
+- Professional website
+- Booking form
 - Availability calendar
-- WhatsApp floating button
-- Contact section with WhatsApp / LINE number
 - Customer reviews section
+- WhatsApp button
+- Instagram button
+- Google Maps
+- Google/Formspree-ready booking
+- Login section placeholder
+- Online payment section placeholder
+- Automatic confirmation email note
 
-Upload these 3 files to GitHub:
+Important:
+Real login, payment, calendar sync, and automatic emails need external services:
+- Formspree / Basin / Netlify Forms for form sending
+- Stripe / PayPal for payment
+- Calendly / Google Calendar for real availability
+- Firebase / Memberstack for customer login
+
+Upload these files to GitHub:
 - index.html
 - style.css
 - script.js
