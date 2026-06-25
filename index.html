@@ -71,78 +71,19 @@ Book Your Service
 </section>
 
 <section id="booking" class="section light">
-  <h2>Booking Form</h2>
+  <h2>Book Your Service</h2>
   <p class="center-text">
-    Fill out the form below. After connecting Formspree, Basin, or Netlify Forms, booking requests will go directly to your email.
+    Please complete the booking form below. I will reply by WhatsApp, LINE, or email.
   </p>
 
-  <form class="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-    <div class="form-row">
-      <div>
-        <label>Full Name</label>
-        <input type="text" name="full_name" placeholder="Your name" required>
-      </div>
-      <div>
-        <label>Country</label>
-        <input type="text" name="country" placeholder="Your country">
-      </div>
-    </div>
-
-    <div class="form-row">
-      <div>
-        <label>Email</label>
-        <input type="email" name="email" placeholder="your@email.com" required>
-      </div>
-      <div>
-        <label>WhatsApp / LINE</label>
-        <input type="text" name="contact" placeholder="090-3845-3757">
-      </div>
-    </div>
-
-    <div class="form-row">
-      <div>
-        <label>Booking Date</label>
-        <input type="date" name="booking_date" required>
-      </div>
-      <div>
-        <label>Preferred Time</label>
-        <input type="time" name="preferred_time">
-      </div>
-    </div>
-
-    <label>Service Type</label>
-    <select name="service_type" required>
-      <option>Airport Pickup Assistance</option>
-      <option>Airport Drop-off Assistance</option>
-      <option>Tokyo Local Tour</option>
-      <option>Food Tour</option>
-      <option>Train & City Support</option>
-      <option>Shopping Guide</option>
-      <option>Custom Travel Support</option>
-    </select>
-
-    <label>Number of People</label>
-    <select name="number_of_people">
-      <option>1 person</option>
-      <option>2 people</option>
-      <option>3 people</option>
-      <option>4+ people</option>
-    </select>
-
-    <label>Message</label>
-    <textarea name="message" rows="5" placeholder="Tell me your airport, hotel area, places you want to visit, or questions."></textarea>
-
-    <button type="submit" class="btn">Send Booking Request</button>
-  </form>
-
-  <div class="note-box">
-    <h3>Form connection options</h3>
-    <p><strong>Formspree:</strong> Replace YOUR_FORM_ID with your real Formspree form ID.</p>
-    <p><strong>Basin:</strong> Replace the form action link with your Basin endpoint.</p>
-    <p><strong>Netlify Forms:</strong> Use this later if you move the site back to Netlify.</p>
+  <div class="booking-form">
+    <a class="btn"
+       href="https://docs.google.com/forms/d/e/1FAIpQLScp0ZjEhZ-3cR6MRvvWHO3OGnydOIefwCQsCh8uWEu5V3Z6cg/viewform?usp=header"
+       target="_blank">
+       Open Booking Form
+    </a>
   </div>
 </section>
-
 <section id="calendar" class="section">
   <h2>Availability Calendar</h2>
   <p class="center-text">Visitors can check available dates. For now, this is a simple calendar design. Later, connect Google Calendar or Calendly.</p>
