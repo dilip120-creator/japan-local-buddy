@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Japan Local Buddy | Tokyo Local Guide</title>
+  <title>Japan Local Buddy | Tokyo Travel Support</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,149 +14,198 @@
     <div class="nav-links">
       <a href="#services">Services</a>
       <a href="#booking">Booking</a>
+      <a href="#calendar">Calendar</a>
       <a href="#gallery">Gallery</a>
-      <a href="#availability">Availability</a>
-      <a href="#faq">FAQ</a>
+      <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
 
   <div class="hero-content">
-    <p class="tagline">Your friendly local buddy in Japan</p>
-    <h2>Explore Tokyo with friendly local support.</h2>
-    <p>Airport pickup, local tours, train help, shopping support, food recommendations, and simple translation assistance for visitors in Japan.</p>
-    <a class="btn" href="#booking">Book Now</a>
+    <p class="tagline">Tokyo local guide • Airport support • Travel help</p>
+    <h2>Travel Japan with a friendly local buddy.</h2>
+    <p>
+      I help visitors with airport pickup assistance, Tokyo tours, train support,
+      food spots, shopping, and simple translation.
+    </p>
+    <a class="btn" href="#booking">Book Your Date</a>
   </div>
 </header>
 
 <main>
-  <section id="services" class="section">
-    <h2>Our Services</h2>
-    <div class="cards">
-      <div class="card"><h3>✈️ Airport Pickup & Drop-off</h3><p>Meet at Haneda or Narita, help with train routes, luggage, and hotel direction.</p></div>
-      <div class="card"><h3>🚶 Tokyo Local Tour</h3><p>Explore Tokyo like a local: Shibuya, Shinjuku, Asakusa, Ueno, Akihabara, and more.</p></div>
-      <div class="card"><h3>🍜 Food Tour</h3><p>Find local ramen, sushi, izakaya, halal/vegetarian options, and budget meals.</p></div>
-      <div class="card"><h3>🚆 Train Support</h3><p>Help with IC cards, tickets, transfers, station signs, and travel planning.</p></div>
-      <div class="card"><h3>🛍 Shopping Guide</h3><p>Shopping help in Akihabara, Harajuku, Shibuya, Don Quijote, and local markets.</p></div>
-      <div class="card"><h3>🌸 Custom Tour</h3><p>Tell me your travel style and I will help plan a simple custom experience.</p></div>
+
+<section id="services" class="section">
+  <h2>Services</h2>
+  <p class="center-text">Choose the service that fits your trip.</p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>✈️ Airport Pickup Assistance</h3>
+      <p>Meet at Haneda or Narita Airport, help with luggage, train tickets, route guidance, and hotel direction.</p>
+      <strong>From ¥5,000 + transport fee</strong>
     </div>
-  </section>
 
-  <section id="pricing" class="section light">
-    <h2>Simple Prices</h2>
-    <div class="price-grid">
-      <div class="price-box"><h3>Starter Local Buddy</h3><p class="price">¥2,000 / hour</p><p>Good for station help, shopping, food, or short city support.</p></div>
-      <div class="price-box"><h3>Half-Day Tokyo Tour</h3><p class="price">¥7,000 / 4 hours</p><p>Best for visitors who want easy support around Tokyo.</p></div>
-      <div class="price-box"><h3>Airport Pickup</h3><p class="price">From ¥5,000</p><p>Airport meeting and travel guidance. Transport cost is separate.</p></div>
+    <div class="card">
+      <h3>🚶 Tokyo Local Tour</h3>
+      <p>Explore Shibuya, Shinjuku, Asakusa, Ueno, Akihabara, hidden streets, local food, and photo spots.</p>
+      <strong>¥7,000 / 4 hours</strong>
     </div>
-  </section>
 
-  <section id="booking" class="section">
-    <h2>Booking Form</h2>
-    <p class="center-text">Please fill in your details. I will reply as soon as possible.</p>
-    <form class="booking-form" action="mailto:dilipsunwar2078@gmail.com" method="post" enctype="text/plain">
-      <label>Full Name</label>
-      <input type="text" name="Full Name" placeholder="Your name" required>
+    <div class="card">
+      <h3>🚆 Train & City Support</h3>
+      <p>Help with IC cards, train routes, transfers, ticket machines, station signs, and travel planning.</p>
+      <strong>¥2,000 / hour</strong>
+    </div>
 
-      <label>Email</label>
-      <input type="email" name="Email" placeholder="your@email.com" required>
+    <div class="card">
+      <h3>🍜 Food & Shopping Guide</h3>
+      <p>Find local restaurants, budget food, souvenir shops, anime stores, Don Quijote, and shopping areas.</p>
+      <strong>From ¥3,000</strong>
+    </div>
+  </div>
+</section>
 
-      <label>WhatsApp / LINE</label>
-      <input type="text" name="Contact" placeholder="Your WhatsApp or LINE ID">
+<section id="booking" class="section light">
+  <h2>Book Your Service</h2>
+  <p class="center-text">Select your date and send your request. I will reply by WhatsApp, LINE, or email.</p>
 
-      <label>Country</label>
-      <input type="text" name="Country" placeholder="Your country">
+  <form class="booking-form" action="mailto:dilipsunwar2078@gmail.com" method="post" enctype="text/plain">
+    <div class="form-row">
+      <div>
+        <label>Full Name</label>
+        <input type="text" name="Full Name" placeholder="Your name" required>
+      </div>
+      <div>
+        <label>Country</label>
+        <input type="text" name="Country" placeholder="Your country">
+      </div>
+    </div>
 
-      <label>Date</label>
-      <input type="date" name="Date">
+    <div class="form-row">
+      <div>
+        <label>Email</label>
+        <input type="email" name="Email" placeholder="your@email.com" required>
+      </div>
+      <div>
+        <label>WhatsApp / LINE</label>
+        <input type="text" name="WhatsApp or LINE" placeholder="090-3845-3757">
+      </div>
+    </div>
 
-      <label>Service</label>
-      <select name="Service">
-        <option>Airport Pickup & Drop-off</option>
-        <option>Tokyo Local Tour</option>
-        <option>Food Tour</option>
-        <option>Train Support</option>
-        <option>Shopping Guide</option>
-        <option>Custom Tour</option>
-      </select>
+    <div class="form-row">
+      <div>
+        <label>Booking Date</label>
+        <input type="date" name="Booking Date" required>
+      </div>
+      <div>
+        <label>Preferred Time</label>
+        <input type="time" name="Preferred Time">
+      </div>
+    </div>
 
-      <label>Number of People</label>
-      <select name="People">
-        <option>1 person</option>
-        <option>2 people</option>
-        <option>3 people</option>
-        <option>4+ people</option>
-      </select>
+    <label>Service Type</label>
+    <select name="Service Type" required>
+      <option>Airport Pickup Assistance</option>
+      <option>Airport Drop-off Assistance</option>
+      <option>Tokyo Local Tour</option>
+      <option>Food Tour</option>
+      <option>Train & City Support</option>
+      <option>Shopping Guide</option>
+      <option>Custom Travel Support</option>
+    </select>
 
-      <label>Message</label>
-      <textarea name="Message" rows="5" placeholder="Tell me your plan, airport, hotel area, or questions."></textarea>
+    <label>Number of People</label>
+    <select name="Number of People">
+      <option>1 person</option>
+      <option>2 people</option>
+      <option>3 people</option>
+      <option>4+ people</option>
+    </select>
 
-      <button type="submit" class="btn">Send Booking Request</button>
-    </form>
-  </section>
+    <label>Message</label>
+    <textarea name="Message" rows="5" placeholder="Tell me your airport, hotel area, places you want to visit, or questions."></textarea>
 
-  <section id="availability" class="section light">
-    <h2>Availability Calendar</h2>
-    <p class="center-text">Example availability. Please contact me to confirm your date.</p>
-    <div class="calendar">
+    <button type="submit" class="btn">Send Booking Request</button>
+  </form>
+</section>
+
+<section id="calendar" class="section">
+  <h2>Availability Calendar</h2>
+  <p class="center-text">This is a simple example calendar. Please contact me to confirm the final schedule.</p>
+
+  <div class="calendar-box">
+    <div class="calendar-header">
       <h3>June</h3>
-      <div class="calendar-row available"><span>Mon</span><strong>Available</strong></div>
-      <div class="calendar-row booked"><span>Tue</span><strong>Booked</strong></div>
-      <div class="calendar-row available"><span>Wed</span><strong>Available</strong></div>
-      <div class="calendar-row available"><span>Thu</span><strong>Available</strong></div>
-      <div class="calendar-row booked"><span>Fri</span><strong>Booked</strong></div>
-      <div class="calendar-row available"><span>Sat</span><strong>Available</strong></div>
-      <div class="calendar-row available"><span>Sun</span><strong>Available</strong></div>
+      <p>Available / Booked</p>
     </div>
-  </section>
 
-  <section id="gallery" class="section">
-    <h2>Photo Gallery</h2>
-    <div class="gallery">
-      <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=900&q=80" alt="Tokyo city">
-      <img src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8?auto=format&fit=crop&w=900&q=80" alt="Tokyo tower">
-      <img src="https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?auto=format&fit=crop&w=900&q=80" alt="Japanese street">
-      <img src="https://images.unsplash.com/photo-1554797589-7241bb691973?auto=format&fit=crop&w=900&q=80" alt="Japan travel">
+    <div class="week-row">
+      <div class="day available"><span>Mon</span><strong>Available</strong></div>
+      <div class="day booked"><span>Tue</span><strong>Booked</strong></div>
+      <div class="day available"><span>Wed</span><strong>Available</strong></div>
+      <div class="day available"><span>Thu</span><strong>Available</strong></div>
+      <div class="day booked"><span>Fri</span><strong>Booked</strong></div>
+      <div class="day available"><span>Sat</span><strong>Available</strong></div>
+      <div class="day available"><span>Sun</span><strong>Available</strong></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="faq" class="section light">
-    <h2>FAQ</h2>
-    <div class="faq-box">
-      <h3>Do you speak English?</h3>
-      <p>Yes. I speak English, Nepali, and simple Japanese.</p>
-      <h3>Can you pick me up from the airport?</h3>
-      <p>Yes. I can meet you at Haneda or Narita and help you reach your hotel.</p>
-      <h3>Do you provide taxi service?</h3>
-      <p>No. I provide airport assistance and travel guidance. Transport fees are separate.</p>
-      <h3>Can I book a custom tour?</h3>
-      <p>Yes. You can tell me your interests and I will help make a simple plan.</p>
-    </div>
-  </section>
+<section id="gallery" class="section light">
+  <h2>Photo Gallery</h2>
+  <p class="center-text">Tokyo places and travel inspiration.</p>
 
-  <section id="contact" class="section contact">
-    <h2>Contact</h2>
-    <p>Message me for booking, questions, or travel support in Japan.</p>
-    <div class="contact-box">
-      <p><strong>Email:</strong> dilipsunwar2078@gmail.com</p>
-      <p><strong>Instagram:</strong> @japanlocalbuddy</p>
-      <p><strong>TikTok:</strong> @japanlocalbuddy</p>
-      <p><strong>Location:</strong> Tokyo, Japan</p>
-    </div>
-  </section>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=900&q=80" alt="Tokyo street">
+    <img src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8?auto=format&fit=crop&w=900&q=80" alt="Tokyo tower">
+    <img src="https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?auto=format&fit=crop&w=900&q=80" alt="Japan street">
+    <img src="https://images.unsplash.com/photo-1554797589-7241bb691973?auto=format&fit=crop&w=900&q=80" alt="Japan travel">
+  </div>
+</section>
 
-  <section id="reviews" class="section">
-    <h2>Customer Reviews</h2>
-    <p class="center-text">Reviews from verified customers will appear here soon.</p>
-    <div class="review-grid">
-      <div class="review-card"><p class="stars">★★★★★</p><p>"Dilip made our Tokyo trip very easy and friendly."</p><strong>— Future Guest</strong></div>
-      <div class="review-card"><p class="stars">★★★★★</p><p>"Great support with trains, food places, and local tips."</p><strong>— Future Guest</strong></div>
-      <div class="review-card"><p class="stars">★★★★★</p><p>"Helpful local buddy for first-time visitors in Japan."</p><strong>— Future Guest</strong></div>
+<section id="reviews" class="section">
+  <h2>Customer Reviews</h2>
+  <p class="center-text">Real customer reviews will be added here after bookings.</p>
+
+  <div class="review-grid">
+    <div class="review-card">
+      <p class="stars">★★★★★</p>
+      <p>"Friendly support for first-time visitors in Tokyo."</p>
+      <strong>— Future Guest</strong>
     </div>
-  </section>
+
+    <div class="review-card">
+      <p class="stars">★★★★★</p>
+      <p>"Helpful with airport, trains, food places, and local tips."</p>
+      <strong>— Future Guest</strong>
+    </div>
+
+    <div class="review-card">
+      <p class="stars">★★★★★</p>
+      <p>"A comfortable way to experience Japan like a local."</p>
+      <strong>— Future Guest</strong>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact light">
+  <h2>Contact</h2>
+  <p>For booking or questions, message me directly.</p>
+
+  <div class="contact-box">
+    <p><strong>WhatsApp / LINE:</strong> 090-3845-3757</p>
+    <p><strong>Email:</strong> dilipsunwar2078@gmail.com</p>
+    <p><strong>Instagram:</strong> @japanlocalbuddy</p>
+    <p><strong>TikTok:</strong> @japanlocalbuddy</p>
+    <p><strong>Service Area:</strong> Tokyo, Haneda Airport, Narita Airport</p>
+  </div>
+
+  <a class="btn" href="https://wa.me/819038453757" target="_blank">Message on WhatsApp</a>
+</section>
+
 </main>
 
-<a class="whatsapp" href="https://wa.me/819000000000" target="_blank">WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/819038453757" target="_blank">WhatsApp</a>
 
 <footer>
   <p>© 2026 Japan Local Buddy. Friendly local support for visitors in Japan.</p>

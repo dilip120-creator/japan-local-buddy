@@ -1,12 +1,15 @@
-Japan Local Buddy V2
+Japan Local Buddy V3
+
+Updates:
+- Removed FAQ
+- Professional services section
+- Booking form with date and time picker
+- Availability calendar
+- WhatsApp floating button
+- Contact section with WhatsApp / LINE number
+- Customer reviews section
 
 Upload these 3 files to GitHub:
 - index.html
 - style.css
 - script.js
-
-Important:
-- Replace WhatsApp number in index.html:
-  https://wa.me/819000000000
-  with your real phone number in international format.
-- Reviews are placeholders. Replace them with real reviews later.
